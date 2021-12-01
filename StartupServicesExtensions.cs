@@ -55,8 +55,8 @@ namespace web
                         //options.Conventions.AddFolderApplicationModelConvention("/Production", model => model.Filters.Add(new OnlyProducersPageFilter(onlyProducersLogger, roleService, cookieManager)));
                     });
 
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
-            services.AddRazorPages().AddRazorRuntimeCompilation();
+            services.AddControllersWithViews();
+            services.AddRazorPages();
 
             services.AddHttpContextAccessor();
 
